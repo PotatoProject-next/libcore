@@ -220,14 +220,6 @@ cc_library_shared {
         "luni/src/test/native/libcore_java_nio_BufferTest.cpp",
         "luni/src/test/native/libcore_libcore_util_NativeAllocationRegistryTest.cpp",
     ],
-    target: {
-        android: {
-            shared_libs: ["libnativehelper_compat_libc++"],
-        },
-        host: {
-            shared_libs: ["libnativehelper"],
-        },
-    },
 
     strip: {
         keep_symbols: true,
